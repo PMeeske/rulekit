@@ -37,9 +37,9 @@ order, with the fields that changed and the effects that fired.
 decision, put a breakpoint in your rule, re-run it — then let the window compare the re-run against
 the recording and tell you whether your logic is still deterministic.
 
-**The tests run with no Unity at all.** 60 specs ship with the package and run two ways: Unity's
-Test Runner, and `dotnet run` from the command line with no editor open. Your CI can run your
-game's rules.
+**The tests run with no Unity at all.** The spec suite ships with the package and runs two ways:
+Unity's Test Runner, and `dotnet run` from the command line with no editor open. Your CI can run
+your game's rules.
 
 ## What it isn't
 
@@ -53,6 +53,11 @@ state only — they do not rewind the scene.
 **Rulekit is not open source.** This site and the GitHub repository hold documentation, the issue
 tracker and samples. The package source ships with the asset and is yours to read and modify once
 you buy it.
+
+## Where to buy
+
+Rulekit is a paid package for the Unity Editor. The store link appears here once the listing is
+live. Until then the contact details below reach the publisher directly.
 
 ## Contact
 
