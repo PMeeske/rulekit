@@ -140,6 +140,14 @@ The last line reads `78 specs passed, no engine in sight.` Exit code is 0 on suc
 failure, so it drops into CI as it is. This run compiles the same source files Unity compiles, so
 it is the proof that the rules carry no engine dependency.
 
+One `note` line comes first. Six of the specs check the package as it was published rather than
+the code — that every file carries its `.meta`, that no build output sits under `Assets/`, that
+the documented spec count is the one the runner prints. Your copy cannot answer those questions:
+the renames above create filenames the published tree does not have, Unity has already
+regenerated the `.meta` files, and `dotnet run` writes `bin/` and `obj/`. So those six pass
+without asserting and say so. The count and the exit code are the same either way, and nothing
+about `Core` or `Samples/Core` is skipped.
+
 In Unity: **Window > General > Test Runner > EditMode > Run All**.
 
 ## How to report a bug
