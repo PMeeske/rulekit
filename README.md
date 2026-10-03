@@ -1,9 +1,11 @@
 # Rulekit
 
-Support and documentation for **Rulekit**, a Unity asset for writing game rules as plain C#.
+Documentation, samples and issue tracker for Rulekit, a paid Unity Asset Store package. The
+package source is not published here.
 
-This repository is the support channel. **It does not contain the asset source.** If you bought
-Rulekit, the full C# source is in the package you downloaded from the Unity Asset Store.
+Rulekit is a Unity asset for writing game rules as plain C#. This repository is its support
+channel. If you bought Rulekit, the full C# source is in the package you downloaded from the
+Unity Asset Store.
 
 - **Report a bug or ask a question:** [open an issue](../../issues/new/choose)
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
@@ -145,7 +147,7 @@ Open an issue with the **Bug report** template. Please include:
 3. What you expected, and what happened instead.
 4. The smallest rule or shell that shows the problem.
 
-Please do not paste Rulekit's own source into a public issue. Name the file and the member instead
+Please do not paste Rulekit's package source into a public issue. Name the file and the member instead
 (`Shell<TState>.Dispatch`), and the version. Your own code is fine to paste.
 
 For anything you do not want in public — a licence or invoice question, or code you cannot share —
