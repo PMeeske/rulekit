@@ -61,7 +61,7 @@ live. Until then the contact details below reach the publisher directly.
 
 ## Contact
 
-**Support:** <https://github.com/OWNER/rulekit/issues> — a public tracker, so you can read what has
+**Support:** <https://github.com/PMeeske/rulekit/issues> — a public tracker, so you can read what has
 already been asked and answered before you buy. Bug reports ask you to paste a Step Recorder log;
 the window has a **Copy log** button, and that paste is usually the whole diagnosis.
 
