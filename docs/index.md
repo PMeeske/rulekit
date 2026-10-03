@@ -37,9 +37,9 @@ order, with the fields that changed and the effects that fired.
 decision, put a breakpoint in your rule, re-run it — then let the window compare the re-run against
 the recording and tell you whether your logic is still deterministic.
 
-**The tests run with no Unity at all.** The spec suite ships with the package and runs two ways:
-Unity's Test Runner, and `dotnet run` from the command line with no editor open. Your CI can run
-your game's rules.
+**The tests run with no Unity at all.** 78 specs ship with the package and run two ways: Unity's
+Test Runner, and `dotnet run` from the command line with no editor open. Your CI can run your
+game's rules.
 
 ## What it isn't
 
