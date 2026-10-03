@@ -8,6 +8,7 @@ channel. If you bought Rulekit, the full C# source is in the package you downloa
 Unity Asset Store.
 
 - **Report a bug or ask a question:** [open an issue](../../issues/new/choose)
+- **Email:** philip.meeske@outlook.com — for anything you cannot put in public
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ## What Rulekit is
@@ -153,7 +154,8 @@ Please do not paste Rulekit's package source into a public issue. Name the file 
 (`Shell<TState>.Dispatch`), and the version. Your own code is fine to paste.
 
 For anything you do not want in public — a licence or invoice question, or code you cannot share —
-say so in an issue and we will move it to email.
+email **philip.meeske@outlook.com** instead. Licence, invoice and refund questions for the paid
+asset are handled by Unity, not here.
 
 ## Repository contents
 
@@ -162,6 +164,7 @@ say so in an issue and we will move it to email.
 | `README.md` | this file |
 | `CHANGELOG.md` | mirrors the `CHANGELOG.md` in the package |
 | `.github/ISSUE_TEMPLATE/` | bug, question, and feature request forms |
+| `docs/` | source of the project page published with GitHub Pages |
 | `LICENSE` | covers **this repository only** — not the paid asset |
 
 The Rulekit asset is licensed under the [Unity Asset Store End User License
