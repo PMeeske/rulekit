@@ -1,0 +1,46 @@
+name: Question
+description: How do I do X with Rulekit?
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away. "Is this the right way to model this?" is a fine question — so is "the manual
+        says X and I do not follow it".
+
+        Please do not paste Rulekit's own source here; this repository is public. Your own code
+        is fine to paste.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What you are trying to build
+      description: >
+        The rule, the state, or the behaviour you are modelling. A short code sketch of your own
+        code helps a lot.
+    validations:
+      required: false
+
+  - type: input
+    id: rulekit-version
+    attributes:
+      label: Rulekit version
+      placeholder: "1.0.0"
+    validations:
+      required: false
+
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity version
+      placeholder: "2022.3.45f1"
+    validations:
+      required: false

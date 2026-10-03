@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Changelog
+    url: https://github.com/OWNER/rulekit/blob/main/CHANGELOG.md
+    about: Check whether your problem is already fixed in a newer version.
+  - name: Rulekit on the Unity Asset Store
+    url: https://assetstore.unity.com/
+    about: Licence, invoice, and refund questions are handled by Unity, not here.

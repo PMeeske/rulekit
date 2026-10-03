@@ -1,0 +1,90 @@
+name: Bug report
+description: Something in Rulekit does not work the way the manual says.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. The fastest fix starts with a **Step Recorder log**: open the
+        Step Recorder window, press **Copy log**, and paste it below.
+
+        Please do not paste Rulekit's own source here — this repository is public. Name the file
+        and member instead (for example `Shell<TState>.Dispatch`). Your own code is fine to paste.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+      description: The smallest rule, shell, or scene that shows the problem.
+      placeholder: |
+        1. Window > Rulekit > Create Demo Scene
+        2. Press Play
+        3. Click the switch
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: recorder-log
+    attributes:
+      label: Step Recorder log
+      description: Step Recorder window > Copy log, then paste here.
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: rulekit-version
+    attributes:
+      label: Rulekit version
+      description: See CHANGELOG.md in the package.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity version
+      placeholder: "2022.3.45f1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Editor platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: Any errors or warnings from the Unity console, including the stack trace.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I am on Unity 2021.3 or newer.
+          required: true
+        - label: I searched the existing issues.
+          required: true

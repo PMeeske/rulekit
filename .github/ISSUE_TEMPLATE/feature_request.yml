@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest something Rulekit should be able to do.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rulekit stays small on purpose. The best requests describe a problem you hit, not an API
+        you would like. That way the fix can be a smaller one than you expected.
+
+        Out of scope, for the record: ECS, movement and physics, visual scripting, networking,
+        and save/load.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you were doing when you needed this, and what got in the way.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you have in mind
+      description: Optional. An API sketch, a window change, or just a rough idea.
+    validations:
+      required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What you do today instead
+      description: Optional, but it tells us how much the gap costs you.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part
+      options:
+        - Core (Logic, Effect, StateDiff)
+        - Runtime (Shell, interpreters, StepRecorder)
+        - Editor (Step Recorder window, inspectors, demo scene)
+        - Tests and the dotnet runner
+        - Samples
+        - Documentation
+        - Not sure
+    validations:
+      required: true
