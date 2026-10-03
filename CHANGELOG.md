@@ -60,8 +60,10 @@ third-party DLLs, no render pipeline assumptions. Full C# source included.
   - **Copy log** puts the whole buffer on the clipboard as text, diffs included.
 - `StepRecorder` inspector showing the live state field by field during Play Mode, with an
   **Undo last step** button.
-- **Demo scene builder** (`Window > Rulekit > Create Demo Scene`) — builds
-  the whole playable scene from the menu, so no scene or prefab asset has to be imported.
+- **Demo scene** (`Samples/Demo/Demo.unity`, with `Loot.prefab` and `Enemy.prefab`) — open it
+  and press Play.
+- **Demo scene builder** (`Window > Rulekit > Create Demo Scene`) — rebuilds those three
+  assets in place, so the shipped demo can always be reset to known-good.
 - All components are grouped under `Add Component > Rulekit`.
 
 ### Samples
@@ -77,7 +79,7 @@ Four samples, each with a pure core and a thin shell:
   success), copy-on-write over an array, a domain effect handled in code, and an IMGUI
   panel so it runs without a UI package.
 
-Plus the demo glue (`DemoPatrol`, `DemoLoot`, `DemoRespawner`) used by the generated scene.
+Plus the demo glue (`DemoPatrol`, `DemoLoot`, `DemoRespawner`) used by the demo scene.
 Every id a sample uses is a constant in that logic's `Ids` class.
 
 ### Tests — 60 specs, two runners, one source

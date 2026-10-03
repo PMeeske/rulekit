@@ -57,15 +57,18 @@ You can delete `Samples/`, `Tests/` and `Tools/` later. Nothing in `Core/`, `Run
 
 ### See it work first
 
-**Window > Rulekit > Create Demo Scene**, then press Play.
+Open `Assets/Rulekit/Samples/Demo/Demo.unity` and press Play.
 
 A capsule walks a loop. An enemy cube chases it, dies after a few hits, drops loot, and respawns.
 A switch opens a door. Nothing in the scene reads input, so it runs whatever your input and render
 settings are.
 
-The Step Recorder window opens with the scene. Click the door, the switch, the inventory, or an
-enemy, and watch the steps arrive. Pick a step and press **Re-run step**. Pick an `Add` step on the
-inventory and press **Restore BEFORE**: the potion is gone again.
+Open **Window > Rulekit > Step Recorder** alongside it. Click the door, the switch, the inventory,
+or an enemy, and watch the steps arrive. Pick a step and press **Re-run step**. Pick an `Add` step on
+the inventory and press **Restore BEFORE**: the potion is gone again.
+
+**Window > Rulekit > Create Demo Scene** rebuilds those three assets in place, if you want the demo
+back the way it shipped.
 
 ### Write a rule
 
