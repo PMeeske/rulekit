@@ -41,7 +41,7 @@ What Rulekit is **not**: an ECS, a movement or physics framework, or visual scri
 | Third-party DLLs | none |
 | Platforms | any; the runtime code is plain C# and `MonoBehaviour` |
 
-The command-line test runner needs the **.NET SDK** (6.0 or newer). It is optional.
+The command-line test runner needs the **.NET SDK** (8.0 or newer). It is optional.
 
 ## Install
 
@@ -124,9 +124,11 @@ The full manual ships with the package as `Assets/Rulekit/README.md`.
 
 ## Run the tests without Unity
 
+One-time setup: in `Assets/Rulekit/Tools/CoreTests/`, drop the trailing `.txt` from
+`CoreTests.csproj.txt` and `Program.cs.txt`. Then:
+
 ```
 cd Assets/Rulekit/Tools/CoreTests
-# one-time: remove the trailing .txt from CoreTests.csproj.txt and Program.cs.txt
 dotnet run
 ```
 
