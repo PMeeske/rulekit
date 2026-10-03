@@ -82,7 +82,7 @@ Four samples, each with a pure core and a thin shell:
 Plus the demo glue (`DemoPatrol`, `DemoLoot`, `DemoRespawner`) used by the demo scene.
 Every id a sample uses is a constant in that logic's `Ids` class.
 
-### Tests — 78 specs, two runners, one source
+### Tests — one spec suite, two runners, one source
 
 Specs are `public static void` methods on static classes named `*Specs`. No attributes and
 no test framework in the spec files themselves; both runners find them by reflection.

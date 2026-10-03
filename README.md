@@ -136,9 +136,9 @@ cd Assets/Rulekit/Tools/CoreTests
 dotnet run
 ```
 
-The last line reads `78 specs passed, no engine in sight.` Exit code is 0 on success and 1 on
-failure, so it drops into CI as it is. This run compiles the same source files Unity compiles, so
-it is the proof that the rules carry no engine dependency.
+The last line counts the specs and ends `specs passed, no engine in sight.` Exit code is 0 on
+success and 1 on failure, so it drops into CI as it is. This run compiles the same source files
+Unity compiles, so it is the proof that the rules carry no engine dependency.
 
 One `note` line comes first. Six of the specs check the package as it was published rather than
 the code — that every file carries its `.meta`, that no build output sits under `Assets/`, that
